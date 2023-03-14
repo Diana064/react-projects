@@ -1,3 +1,10 @@
+import { Route, Routes } from 'react-router';
+import { ListCourses } from 'pages/ListCourses';
+
 export const App = () => {
-  return <div>React homework template</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<ListCourses />}></Route>
+    </Routes>
+  );
 };
